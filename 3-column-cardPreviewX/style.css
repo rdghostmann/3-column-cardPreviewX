@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-clr);
+
+}
+
+img, svg {
+    max-width: 100%;
+    display: block;
+}
+
+:root {
+    /* neutral color */
+    --gray-clr: hsl(0, 0%, 95%);
+    --white-clr: hsla(0, 0%, 100%, 0.75);
+
+    /* color */
+    --accent-clr: hsl(31, 77%, 52%);
+    --primary-clr: hsl(184, 100%, 22%);
+    --secondary-clr: hsl(179, 100%, 13%);
+
+    /* font  */
+    --ff-head: 'Big Shoulders Display', cursive;
+    --ff-text: 'Lexend Deca', sans-serif;
+}
+
+
+@media only screen and (min-width: 300px)  {
+    
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 23rem;
+        padding: 5em 0;
+        background-color: var(--gray-clr);
+    }
+    
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        overflow: hidden;
+    
+    } 
+
+    
+article {
+    display: block;
+    max-width: 100%;
+    width: 20rem;
+    height: 30rem;
+    padding: 1.5em 2em 5em;
+
+}
+
+.card-icon {
+    margin: 1.55em 0;
+}
+
+.card-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    font-family: var(--ff-head);
+
+}
+
+.card-text {
+    font-family: var(--ff-text);
+    font-size: 1.2em;
+    font-weight: 400;
+    color: var(--white-clr);
+    margin: 1.3em 0 1.5em;
+    line-height: 1.7;
+}
+
+button {
+    display: block;
+    all: unset;
+    border-radius: 30px;
+    background-color: var(--gray-clr);
+    padding: 0.8em 1em;
+}
+
+/* SUV start */
+.card-accent {
+    background-color: var(--accent-clr);
+    color: var(--gray-clr);
+}
+
+.btn-accent a {
+    color: var(--accent-clr);
+    text-decoration: none;
+    font-family: var(--ff-text);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.6rem 0.9rem;
+}
+/* SUV end */
+
+
+/* SEDAN start */
+.card-primary {
+    background-color: var(--primary-clr);
+    color: var(--gray-clr);
+}
+
+.btn-primary a {
+    color: var(--primary-clr);
+    text-decoration: none;
+    font-family: var(--ff-text);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.6rem 0.9rem;
+}
+
+/* SEDAN end */
+
+/* LUXURY start */
+.card-secondary {
+    background-color: var(--secondary-clr);
+    color: var(--gray-clr);
+}
+
+.btn-secondary a {
+    color: var(--secondary-clr);
+    text-decoration: none;
+    font-family: var(--ff-text);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.6rem 0.9rem;
+}
+
+/* LUXURY end */
+} 
+
+
+
+@media only screen and (min-width: 1440px) {
+main {
+    width: 90rem;
+    padding: 5em 0;
+}
+
+.container {
+    flex-direction: row;
+} 
+}
+
+
+
+
+
